@@ -1,0 +1,153 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* MATERIO -> styling */
+#website-name
+{
+    font-size: 30px;
+    font-weight: bolder;   
+    border: 1px solid rgb(97,34,213);
+    background-color: rgb(97,34,213);
+}
+/* <> -> styling */
+#Website-code-icon
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+/* Sign Up at top header */
+a{
+    /* border:2px solid yellow; */
+    text-decoration: none;
+}
+#sign-up-button
+{
+    background-color: rgb(97,34,213);
+    border: 1px solid rgb(97,34,213);
+    font-weight: bold;
+    color: white;
+    /* width:40px; */
+    box-shadow:0px 4px 8px 0px rgba(0, 0, 0,0.5)
+}
+#Menu-icon-color
+{
+    color: rgb(97,34,213);
+}
+#Blue-float
+{
+    width:20%; 
+    position: fixed;
+    top:27%;
+    left: 0px;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+#Orange-Float
+{
+    width: 30%;
+    position: fixed;
+    top: 70%;
+    z-index: -1;
+}
+.Background-login-form-Image
+{
+    background-image:  url(../Materio-Images/output-onlinegiftools-3.gif);    
+    background-repeat: no-repeat;             
+    background-attachment: fixed;              
+}
+.Background-Image-404-Page
+{
+    background-image:  url(../Materio-Images/Eroor.gif);    
+    background-repeat: no-repeat;              
+    background-attachment: fixed;               
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+#Index-cards-1
+{
+   
+    /* width:12%; */
+    background-color:rgb(97,34,213);
+    box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.3);
+}
+#Index-cards-2
+{
+    position: relative;
+    bottom: 55%;
+    left: 54%;
+    z-index:1;
+    width:60%;
+    background-color:rgba(255,76,81);
+    box-shadow: 4px 4px 7px 3px rgba(0,0,0,0.3);
+    width:15%
+}
+.Icons-components-hover:hover
+{
+    color:rgb(97,34,213);
+    cursor: pointer;
+    font-size: 60px;
+}
+.Icons-components-not-hover
+{
+
+    color:rgb(158,158,179);
+    font-size: 50px;
+
+
+}
+.bg-image-useful-cards
+{
+    background-image:  url(../Materio-Images/1-Cards-Col-1.png);    
+    background-repeat: no-repeat;              
+    background-attachment: scroll;               
+    background-position: center; 
+    background-size: contain;
+}
+
+.Icon-components-content
+{ 
+    color:rgb(158,158,179);
+    font-size: 20px;
+    font-weight: bold;
+}
+#Demo-Buy-Now
+{
+    border:1px solid rgb(255,76,81); 
+    background-color: rgb(255,76,81);
+    font-weight: bold;
+    width:35%;
+    font-size: 20px;
+    margin-left: 2%;
+    box-shadow:3px 4px 8px 2px rgba(0, 0, 0,0.5);
+    color:white;
+    text-decoration: none;
+}
+#Live-Preview-unique-Layouts
+{
+    background-color: rgb(97,34,213); 
+    box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5);
+    border: 1px solid rgb(97,34,213); 
+    font-size:20px ;
+    font-weight: bold;
+    color: white;
+}
+#BTS-Copyright
+{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color:rgb(145,85,253)
+}
+#BTS-Copyright:hover
+{
+    color: rgb(97,34,213);
+}

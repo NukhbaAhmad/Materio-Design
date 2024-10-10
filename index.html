@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--   Title -->
+
+    <link rel="icon" href="Materio-Images/code.svg" class="img-fluid link-primary" type="image/x-icon">
+    <title>MATERIO</title>
+
+
+    <!-- CSS File LINK -->
+
+    <link rel="stylesheet" href="Materio-Files/Materio.css" type="text/css">
+
+
+    <!-- BOOTSTRAP LINKS -->
+
+
+    <!-- BOOTSTRAP CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <!-- BOOSTRAP JAVA Bundle(Bootstrap+ Popper) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- FontAwesome Link -->
+
+    <script src="https://kit.fontawesome.com/1f4ff04947.js" crossorigin="anonymous"></script>
+
+    <!-- BOOtstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <!-- Anmation Animate.CSS Link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: rgb(241,241,248);">
+
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="container-fluid">
+
+        <!--  1st-Row -->
+
+        <div class="row">
+
+            <!-- full width col-12 -->
+
+            <div class="col-12">
+
+                <!-- Nav based navigation -->
+
+                <!-- STUDY
+                
+                       1-> navbar -> nav based navigation 
+                       2-> navbar-expand-lg -> At and above {breakpoint } no toggle (scroll) AND below {breakpoint} toggle works
+                       3-> animate__animated -> to animate the navbar  from animate.css 
+                       4-> animate__fadeInDown -> to animate the nav by fadein from up to downward 
+                       5-> animation__delayed-0s -> no delay aniate at load of page 
+                       6-> D-flex -> Display flex 
+                       7-> align-items-start -> Align items at the start(top)
+                -->
+
+                <nav class="navbar d-flex  align-items-start mb-2 pb-sm-5 pb-0 navbar-expand-lg animate__animated animate__fadeInDown animate__delay-1s"
+                    style="padding-left: 5%;">
+
+                    <!-- Website-Name and Code-Icon-->
+
+                    <!-- STUDY Icon
+                        1-> ms-5 -> margin-left
+                        2-> user-select-none -> user cant select it 
+                        3-> Id contain styling for font-size,font-weight,color
+                -->
+
+                    <!-- STUDY
+                        1-> navbar-brand -> class for website heading
+                        2-> h1 -> refers to class for heading
+                        3-> rounded -> as border given to web-name makes border rounded
+                        4-> user-select-none -> user cant select it
+                        5-> Id contain the styling for font-size,font-weight,border,background-color
+                -->
+
+                    <span class="navbar-brand rounded h1" id="website-name"><i class="bi bi-code  user-select-none"
+                            id="Website-code-icon">MATERIO</i></span>
+
+                    <!-- STUDY
+                
+                    1-> navbar-toggle -> for visibility of content on small screen through click on Menu-icon
+                    2-> data-bs-toggle="collapse" -> hides the content
+                    3->data-bs-target -> Target the collapse having the same ID
+                
+                -->
+
+                    <!-- BUTTON on Menu-icon for toggle -->
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <!-- ICON-Menu  -->
+
+                        <!-- STUDY
+                    1-> navbar-toggler-icon ->name of the icon set and its a menu icon
+                    2-> rounded -> border for icon set to rounded 
+                    3-> border-primary -> a blue border
+                    4-> navbar-dark -> makes the icon color kinda clear(whitesmoke)
+                -->
+
+                        <span class="navbar-toggler-icon rounded border-primary navbar-dark"
+                            style="font-size:30px; color:white; background-color:rgb(97,34,213);font-weight: bold;"></span>
+
+                    </button>
+
+
+                    <!-- Div for Navbar-items -->
+
+                    <!-- STUDY
+                    
+                    1-> collapse -> hide content on toggle 
+                    2-> id="navbarSupportedContent" -> same as data-bs-target on BUTTON of Menu-icon for toggle
+                
+                -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 5%;">
+
+                        <!-- Unordered-List for Items -->
+
+                        <!-- STUDY
+                    1-> ms-auto -> margin-left
+                    2->  mb-lg-0-> No margin-bottom on items on large and {breakpoints} greater then it will be 0
+                    3->  mb-2 -> on all other {breakpoints sm,md,xsm} margin-bottom 
+                    4-> user-select-none -> user can select it
+                
+                -->
+                        <ul class="navbar-nav ms-auto border-primary mb-2 mb-lg-0 user-select-none">
+
+                            <!-- List item -->
+
+                            <!-- STUDY 
+                    1-> nav-item -> each item contain content 
+                    2-> pe-> padding-right for item (No content )
+                    3-> nav-link -> Link styling -> Add if content is link
+                    4-> active -> highlight the content as active for selection
+                    5-> text-lg-start -> At and above {breakpoints lg,xl,xxl} the text alignment is left
+                    6-> text-end -> Below {breakpoints md,sm,xsm} the text alignment is right -->
+
+                            <!-- ONE -->
+
+                            <li class="nav-item pe-3">
+                                <a class="nav-link active text-end text-lg-start" aria-current="page" href="#DEMO"
+                                    style="text-decoration:none;">Demo</a>
+                            </li>
+
+                            <!-- TW0 -->
+                            <li class="nav-item pe-3">
+                                <a class="nav-link text-end text-lg-start" aria-current="page" href="#Features"
+                                    style="text-decoration:none;color:black;">Features</a>
+                            </li>
+
+                            <!-- THREE -->
+                            <li class="nav-item pe-3">
+                                <a class="nav-link text-end text-lg-start" aria-current="page" href="#Apps"
+                                    style="text-decoration:none;color:black;">Apps</a>
+                            </li>
+
+                            <!-- FOUR -->
+                            <li class="nav-item pe-3">
+                                <a class="nav-link text-end text-lg-start" aria-current="page" href="#Cards"
+                                    style="text-decoration:none;color:black;">Cards</a>
+                            </li>
+
+                            <!-- FIVE -->
+                            <li class="nav-item pe-3">
+                                <a class="nav-link text-end text-lg-start" aria-current="page" href="#Pages"
+                                    style="text-decoration:none;color:black;">Pages</a>
+                            </li>
+
+                            <!-- SIX -->
+                            <li class="nav-item pe-3">
+                                <a class="nav-link text-end text-lg-start" aria-current="page" href="#Components"
+                                    style="text-decoration:none;color:black;">Components</a>
+                            </li>
+
+                            <!-- SEVEN -->
+                        </ul>
+
+                        <!-- End of list items -->
+
+
+                        <!-- Form for button  -->
+
+                        <!-- STUDY
+                    1-> d-flex -> display:flex -> makes items flexible
+                    2-> justify-content-end -> align button at the right side
+                    3-> role="search" explains role of the form
+                
+                -->
+                        <form class="d-flex user-select-none justify-content-end" role="search"
+                            style="margin-right: 3%;">
+
+                            <!-- BUTTON -> Sign Up -->
+
+                            <!-- STUDY
+                    1> btn -> recieve basic styling of button from bootstrap
+                    2-> text-lg-start -> At and above {breakpoint lg,xl,xxl } the button is aligned at left 
+                    3-> text-end -> At smaller screens OR Below {breakpoinst sm, md ,xsm} the button is aligned at right
+                    4-> shadow-lg -> large shadow around button
+                    5-> rounded-> Border is rounded
+                    6-> ps -> padding-start(left)
+                    7-> pe ->padding-end -> padding-right
+                    8-> text-white -> Sign-Up text color is set to white
+                    9-> Id contains styling for background-color ,font-weight,border,box-shado
+                    
+                -->
+
+                            <a href="Materio-Files/Login-Form.html"
+                                class="btn text-end text-lg-start ps-4 pe-4 text-white rounded" id="sign-up-button"
+                                target="_blank">
+
+                                Sign Up
+                            </a>
+                        </form>
+                        <!-- End of Form for SignUp button -->
+                    </div>
+                    <!-- End of Div for Navbar-items -->
+                </nav>
+                <!-- End of Nav based Navigation -->
+            </div>
+            <!-- End of Col-12 (Row-1) Div -->
+        </div>
+        <!-- End of Div for First Row -->
+
+
+
+        <!-- part-2 -->
+
+        <!-- 2ND ROW -> Content + IMG -->
+
+        <!-- STUDY
+            1-> mt -> margin-top:5;
+            2-> ms -> margin-left:5;
+            -->
+
+        <div class="row">
+
+
+
+
+            <!-- Start of Div for col-7 -->
+
+            <!-- IMG -->
+
+            <div class="col-xlg-7 col-lg-6  mt-xlg-0 order-lg-last">
+
+
+
+                <img src="Materio-Images/Main.gif" alt="black/White-template"
+                    style="box-shadow: 7px 6px 20px 10px rgba(0, 0, 0, 0.19);"
+                    class="   px-xlg-0 pt-xlg-0 img-fluid rounded ">
+
+
+
+                <img src="Materio-Images/output-onlinegiftools.gif" alt="BLUE-FLOAT" id="Blue-float"
+                    class="img-fluid" />
+
+
+            </div>
+
+            <!-- End of Div for Col-7 -->
+
+
+            <!-- Col-2 = cols-5 -->
+
+            <!-- STUDY
+                    1-> col-lg-5 -> At and above {breakpoingts lg,xl,xxl} Col-No-2 = col-5 
+                    2-> below {Breakpoints sm,xsm,md} the col-No-1 = COL-12
+                -->
+
+            <div class="col-xlg-5 col-lg-6 mt-3 ps-sm-2 order-lg-first  ps-xlg-0 pt-sm-5 pt-xlg-0  ">
+
+                <!-- Heading for Content -->
+                <h1 style="padding-left:15%;color:#9155FD; font-weight:bold;">Materio-Vuetify Vuejs 3
+                    Admin Template</h1>
+
+                <!-- Paragraphs for seprate lines -> content -->
+
+                <!-- ONE -->
+                <p style="font-size:18px;padding-left: 15%;">Most Powerful & Comprehensive<br /> <strong>Vuetify Admin
+                        Template</strong> built for developers</p>
+                <!-- Two -->
+                <p class="mt-0" style="font-size:20px;padding-left: 17%;">- Based on <b>Vue 3 & Vuetify 3</b> </p>
+                <!-- Three -->
+                <p style="font-size:18px;padding-left: 17%;">- Includes<b> Both TS & JS Versions</b> </p>
+                <!-- Four -->
+                <p style="font-size:18px;padding-left: 17%;">- Utilizes <b>Vite, Vue Router & Pinia</b> </p>
+                <!-- Five -->
+                <p style="font-size:18px;padding-left: 17%;">- <b>JWT Auth & ACL</b> Support </p>
+                <!-- Six -->
+                <p style="font-size:18px;padding-left: 17%;">- <b>Internationalization/i18n & RTL </b>Read </p>
+
+                <!-- Live Preview button -->
+                <a href="Materio-Files/404-Error.html" id="Demo-Buy-Now" class="btn p-2 rounded"
+                    style="border:1px solid rgb(145,85,253); background-color: rgb(145,85,253);margin-left: 17%;">Demo
+                </a>
+                <!-- Buy Now Button -->
+                <a href="Materio-Files/404-Error.html" class="btn p-2 rounded" id="Demo-Buy-Now">Buy Now
+                </a>
+
+            </div>
+
+            <!-- End of Div for col-5 -->
+
+        </div>
+
+        <!-- End of 2nd Row of the Main-Container -->
+
+
+
+
+
+
+
+        <!-- THIRD ROW -->
+
+        <!-- Demo item Linked-->
+
+        <!-- Unique Layouts -->
+
+        <a name="DEMO" style="text-decoration:none;">
+
+            <div class="row text-center"
+                style="box-shadow:
+            3px 4px 8px 2px rgba(0, 0, 0,0.5);background-color:rgb(234,234,240);box-shadow: 2px 0px rgba(0, 0, 0,0.5); margin-top: 10%;">
+
+                <!-- Col for Content -->
+                <div class="col-12">
+
+                    <!-- Heading -->
+
+                    <h3 class="" style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">
+                        Choose From Unique Layouts</h3>
+
+                    <!-- Floating Orange shape -->
+                    <div style="position:relative"><img src="Materio-Images/output-onlinegiftools -2.gif"
+                            alt="Orange-float" class="img-fluid" id="Orange-Float" /></div>
+
+                    <!-- Paragraph Content -->
+
+                    <p class="mt-2 ps-sm-5 ps-lg-0 pb-5" style="color:rgb(145,85,253);font-size: 17px;">Materio Vuejs
+                        admin template provides 4 unique layouts: Default, Bordered, Semi-Dark & Dark</p>
+                </div>
+                <!-- End of Col for Content -->
+            </div>
+            <!-- End of Third Row -->
+        </a>
+        <!-- End of Link with DEMO Item -->
+
+
+
+
+
+
+
+
+        <!-- ROW-4 Unique Layouts Items Part-1 -->
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center " style="background-color:rgb(234,234,240);">
+
+            <!-- COL-1 Vertical Layout-->
+            <div class="col p-4">
+                <!-- Heading -->
+                <span style="font-size: 20px;font-weight: bold;">Vertical Layout</span>
+                <!-- Image Vertical Layout -->
+                <img src="Materio-Images/Vertical-layoit.jpg" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+
+            <!-- COl-2 Bordered Layout -->
+            <div class="col p-4">
+                <!-- Heading -->
+                <span style="font-size: 20px;font-weight: bold;">Bordered Layout</span>
+                <!-- Image Bordered Layout -->
+                <img src="Materio-Images/Border-layout.png" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+            <!-- COL-3 Semi Dark Layout -->
+            <div class="col p-4">
+                <!-- Heading -->
+                <span style="font-size: 20px;font-weight: bold;">Semi Dark Layout</span>
+                <!-- Image Semi Dark Layout -->
+                <img src="Materio-Images/2-Semi-dark-Layout-1.png" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+
+
+
+            <!-- ROW-4 Unique Layouts Items Part2  LINE-2 -->
+
+
+
+            <!-- COL-1 Dark Layout-->
+            <div class="col p-4">
+                <!-- Heading -->
+                <span style="font-size:20px;font-weight: bold;">Dark Layout</span>
+                <!-- Image Dark Layout -->
+                <img src="Materio-Images/Dark-layout.png" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+
+            <!-- COl-2 Horizontal Layout -->
+            <div class="col p-4">
+
+                <!-- Heading -->
+                <span style="font-size: 20px;font-weight: bold;">Horizontal Layout</span>
+                <!-- Image Horizontal Layout -->
+                <img src="Materio-Images/Horizontal-Layout-1-a.png" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+            <!-- COL-3 Horizontal Dark  Layout -->
+            <div class="col p-4 ">
+
+                <!-- Heading -->
+                <span style="font-size: 20px;font-weight: bold;">Horizontal Dark Layout</span>
+                <!-- Image Horizontal Dark Layout -->
+                <img src="Materio-Images/Horizontal-dark-layout-2-b.jpg" class="img-fluid mt-4 rounded"
+                    style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+                <!-- Button -> Live Preview -->
+                <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                    id="Live-Preview-unique-Layouts">Live Preview</a>
+            </div>
+
+            <!-- END LINE 2 ->ROW 4 -->
+
+        </div>
+        <!-- End Row-4 -->
+
+
+
+        <!-- 6th ROW -->
+
+        <!-- Useful Features Heading -->
+        <a name="Features" style="text-decoration:none;">
+            <div class="row text-center"
+                style="box-shadow:
+                3px 4px 8px 2px rgba(0, 0, 0,0.5);background-color: transparent;box-shadow: 2px 0px rgba(0, 0, 0,0.5); margin-top: 5%;">
+
+                <!-- Col for Content Of Features-->
+                <div class="col-12">
+
+                    <!-- Heading -->
+
+                    <h3 style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">Useful
+                        Features</h3>
+
+                    <!-- Floating Orange shape -->
+                    <div style="position:relative"><img src="Materio-Images/output-onlinegiftools -2.gif"
+                            class="img-fluid" id="Orange-Float" /></div>
+
+                    <!-- Paragraph Content -->
+
+                    <p class="mt-2 mb-3" style="color:rgb(145,85,253);font-size: 17px;">Salient features that makes
+                        Materio stand out</p>
+
+        </a>
+
+
+        <!-- Features Conatiner -> width!=100% -->
+        <div class="container bg-white rounded mt-5">
+            <!-- ROW-1 -->
+            <div class="row row-cols-1 row-cols-sm-2   row-cols-md-3 ">
+                <!-- COL-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-gear-fill ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">StarterKit <br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">A starter Kit is
+                                    set of pre-existing code that you can launch to automate your repetitive
+                                    tasks.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-2 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i
+                                class="bi bi-emoji-heart-eyes-fill ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Eye-Catching Design <br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Beautifully
+                                    crafted, clean & Eye-Catching admin theme with 4 unique layouts.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-3 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-hand-thumbs-up ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Easy Navigation<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Carefully crafted,
+                                    clean smart & easy theme navigation with collapsible option.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2ND LINE OF ROW-1  -->
+
+                <!-- COL-4 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-arrow-repeat ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Auto Import<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Use helper
+                                    function,<br />composables, and Vue APIs without explicitly importing them.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-5 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-hr ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Code Splitting<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">
+                                    To avoid winding up with a large bundle, it’s good to get ahead of the problem and
+                                    use "Code Splitting".</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-6 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-cloud-download-fill ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Lazy Loading<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">It's more
+                                    efficient to split each route's components into a separate chunk, and only load them
+                                    when the route is visited.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd line of ROW-1 -->
+
+                <!-- COL-7 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i
+                                class="bi bi-globe-central-south-asia ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Multi Language<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Multi Language
+                                    support enable you to create your personalized apps in your langauge</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL-8 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-list-columns-reverse ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">RTL<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Materio supports
+                                    RTL(right to left) languages such as Arabic, Persian or Hebrew are supported.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-9 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-repeat ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Continuous Updates<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">12 Months Free
+                                    updates with new demos and features is guaranteed.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4TH LNE of Row-1 -->
+
+                <!-- COL-10 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-sliders2 ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Quality Code<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">We follow the best
+                                    industry code structure that all developers will be able to pick up easily and fall
+                                    in love.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL-11 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end pt-4"><i class="bi bi-headset ps-lg-3 pb-lg-4 ps-0 pb-0"
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">Support<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Get access to
+                                    premium customers support from the actual people who have created.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL-12 of Row-1 -->
+                <div class="col rounded">
+                    <div class="row">
+                        <!-- ICON -->
+                        <div class="col-2 text-end border-info pt-4">
+                            <i class="bi bi-plus-lg ps-lg-3 pb-lg-4 ps-0 pb-0 "
+                                style="color:rgb(97,34,213);font-size:35px;"></i>
+                        </div>
+                        <!-- Text -->
+                        <div class="col-10 text-start">
+                            <p class="pe-3 pt-2 mt-3" style="font-weight:bold;">& Many more<br />
+                                <span style="font-weight:normal;color:rgba(0,0,0,0.9);font-size:16px">Many more features
+                                    are available in Materio admin template.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END OF ALL FEATURES ITEM CONTENT-> Row -->
+            </div>
+            <!-- Features Items Conatiner -->
+        </div>
+    </div>
+    <!-- End of Col for Content(Features) -->
+    </div>
+    <!-- End of 6th Row For Features -->
+
+
+
+    <!-- 7TH ROW -->
+
+    <!-- STUNNING APPLICATIONS -->
+
+    <a name="Apps" style="text-decoration:none;">
+
+        <div class="row text-center"
+            style="box-shadow:
+            3px 4px 8px 2px rgba(0, 0, 0,0.5);background-color:rgb(235,235,245);box-shadow: 2px 0px rgba(0, 0, 0,0.5); margin-top: 10%;">
+
+            <!-- Col for Content -->
+            <div class="col-12">
+
+                <!-- Heading -->
+
+                <h3 class="" style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">Stunning
+                    Applications</h3>
+
+                <!-- Paragraph Content -->
+
+                <p class="mt-2 ps-sm-5 ps-lg-0 pb-5" style="color:rgba(0,0,0,0.9);font-size: 18px;">Materio <span
+                        style="color:rgb(145,85,253)">Vuejs admin template</span> provides four different applications
+                    which enables you to
+                    get started and build your applications faster.</p>
+            </div>
+            <!-- End of Col for Content -->
+        </div>
+        <!-- End of 7TH ROW  -> STUNNING APPLICATIONS-->
+
+    </a>
+
+
+
+
+
+
+    <!-- 8TH Row  Application-Items-->
+
+    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 text-center pt-lg-5 px-lg-5"
+        style="background-color:rgb(234,234,240);padding-bottom: 10%;">
+
+        <!-- COL-1 Calendar Layout-->
+        <div class="col p-4">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Calendar App</span>
+            <!-- Calendar App -->
+            <img src="Materio-Images/2-Calendar.jpg" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+        <!-- COl-2 Invoice App -->
+        <div class="col p-4">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Invoice App</span>
+            <!-- Invoice App -->
+            <img src="Materio-Images/Invoice.jpg" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+        <!-- COL-3 User App -->
+        <div class="col p-4">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">User App</span>
+            <!-- User App -->
+            <img src="Materio-Images/2-Semi-dark-Layout-1.png" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+    </div>
+    <!-- End Row-8th Of Application-Items -->
+
+
+
+
+
+
+
+
+    <!-- 9TH ROW -->
+
+    <!-- Counter -->
+
+    <div class="row text-center  row-cols-2 row-cols-md-4"
+        style="background-color:rgb(97,34,213);color:white; height:300px;">
+
+        <!-- COL-1 -->
+        <div class="col pt-3 align-self-center">
+            <h1 style="font-weight:bold;font-size:70px;">8+</h1>
+            <p style="color:rgba(255,255,255,0.7)">Applications</p>
+        </div>
+        <!-- COL-2 -->
+        <div class="col pt-3 align-self-center">
+            <h1 style="font-weight:bold;font-size:70px;">40+ </h1>
+            <p style="color:rgba(255,255,255,0.7)">Components</p>
+        </div>
+        <!-- COL-3 -->
+        <div class="col pt-3 align-self-center">
+            <h1 style="font-weight:bold;font-size:70px;">50+ </h1>
+            <p style="color:rgba(255,255,255,0.7)">Cards</p>
+        </div>
+        <!-- COL-4 -->
+        <div class="col pt-3 align-self-center">
+            <h1 style="font-weight:bold;font-size:70px;">30+ </h1>
+            <p style="color:rgba(255,255,255,0.7)">Pages</p>
+        </div>
+
+    </div>
+
+    <!-- End 9th Row -->
+
+    </a>
+
+
+
+    <!-- 10TH ROW -->
+
+    <!-- Advanced Cards -->
+
+
+    <a name="Cards" style="text-decoration:none;">
+
+        <div class="row text-center"
+            style="box-shadow:
+            3px 4px 8px 2px rgba(0, 0, 0,0.5);background-color:rgb(235,235,245);box-shadow: 2px 0px rgba(0, 0, 0,0.5);">
+
+            <!-- Col for Content -->
+            <div class="col-12">
+
+                <!-- Heading -->
+
+                <h3 class="" style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">Advanced
+                    Cards</h3>
+
+                <!-- Paragraph Content -->
+
+                <p class="mt-2 ps-sm-5 ps-lg-0 pb-5" style="color:rgba(0,0,0,0.9);font-size: 18px;">Materio admin
+                    provides 60+ basic & advanced cards for eCommerce, Analytics
+                    Statistics, Charts, Maps and Interactive.</p>
+            </div>
+            <!-- End of Col for Content -->
+        </div>
+        <!-- End of 10TH ROW  -> Advanced Cards-->
+    </a>
+
+
+
+    <!-- 11TH ROW -->
+
+    <!-- ADVANCE CARDS ITEMS -->
+
+    <!-- row-cols-1  ps-lg-5 ps-0 ms-0 -->
+
+    <div class="row " style="height:500px;background-color: rgb(234,234,240);">
+
+        <div class="col bg-image-useful-cards pt-5 mb-5">
+
+            <!-- CARD-1 blue -->
+
+            <div class="row">
+
+                <!-- Half-Col -->
+                <div class="col-6 mt-5 mt-md-0 text-start d-flex justify-content-center">
+                    <a href="Materio-Files/404-Error.html" style="text-decoration: none;">
+                        <div class="card border-0 d-flex animate__animated animate__pulse  animate__delay-1s animate__infinite"
+                            style="width: 10rem;background-color:rgb(97,34,213);box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.4);">
+                            <div class="card-body">
+                                <!-- SHOP  -->
+                                <i class="bi bi-bag-check  text-start"
+                                    style="color:white;font-size: 30px;font-weight: bold;cursor: pointer;"></i>
+
+                                <!-- Ellipse -->
+                                <i class="bi bi-three-dots-vertical ms-5"
+                                    style="color: white;font-size: 30px;font-weight:bold ;cursor: pointer;"></i>
+
+                                <!-- Content -->
+                                <div class="d-flex flex-column align-item-start  mt-1">
+                                    <!-- Start Para -->
+                                    <p style="color:white;font-weight: bold;"> New Project
+                                        <br>
+                                        <span style="color:white;font-size:25px;font-weight:bold">862</span>
+                                        <small style="color:red;font-size:15px;">-18%</small>
+                                        <br>
+                                        <small style="cursor:pointer">Yearly Project</small>
+
+                                    </p>
+                                    <!-- End para -->
+                                </div>
+                                <!-- End Content -->
+
+                    </a>
+                </div>
+                <!-- End Card Body -->
+            </div>
+            <!-- End Card -->
+        </div>
+        <!-- End Half Col -> contains card -->
+
+    </div>
+    <!-- End Row -> Nesting -->
+
+
+
+
+    <!-- CARD-2 -->
+
+    <!-- Start Row -->
+
+
+    <div class="row">
+        <!-- Col For Card-1 -->
+
+        <div class="col-5 offset-lg-7 offset-md-6 offset-5">
+            <!-- CARD-2 Orangee -->
+            <a href="Materio-Files/404-Error.html" style="text-decoration: none;">
+                <div class="card border-0 text-center  d-flex mb-4  animate__animated animate__pulse  animate__delay-1s animate__infinite"
+                    style="width:10rem;background-color:rgb(255,76,81);box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.4);">
+                    <!-- CARD-2 BODY -->
+                    <div class="card-body">
+                        <!-- Content -->
+
+                        <h2 style="color:black;font-weight:bold;">$86.4k</h2>
+
+                        <!-- ICON -->
+
+                        <i class="bi bi-bar-chart-fill" style="color:white;font-size:50px;font-weight:bold;"></i>
+                        <br>
+
+                        <small style="cursor:pointer;color:rgba(0, 0, 0, 0.7);font-weight: bold;">Final Project</small>
+                    </div>
+                    <!-- End Card=2 Body -->
+                </div>
+                <!-- End Card-2 -->
+
+            </a>
+
+
+        </div>
+        <!-- End col for Card-2 -> RED -->
+
+    </div>
+    <!-- End Row -->
+
+    </div>
+    <!-- End MAIN COL -->
+    </div>
+    <!-- END 11TH ROW OF CARDS ITEMS -->
+
+
+
+    <!-- 12TH ROW -->
+
+    <!-- Useful Pages -->
+
+
+    <a name="Pages" style="text-decoration:none;">
+
+        <div class="row text-center " style="background-color:rgb(241,241,249);box-shadow:
+             3px 4px 8px 2px rgba(0, 0, 0,0.5);box-shadow: 2px 0px rgba(0, 0, 0,0.5);">
+
+            <!-- Col for Content -->
+            <div class="col-12">
+
+                <!-- Heading -->
+
+                <h3 class="" style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">Useful
+                    Pages</h3>
+
+                <!-- Paragraph Content -->
+
+                <p class="mt-2 ps-sm-5 ps-lg-0 pb-5" style="color:rgba(0,0,0,0.9);font-size: 18px;">Materio <span
+                        style="color:rgb(145,85,253)">Vuejs admin template</span> provides 30+ pages. It contains all
+                    the commonly used pages to
+                    develop any application which will ease the developer's efforts.
+
+                </p>
+            </div>
+            <!-- End of Col for Content -->
+        </div>
+        <!-- End of 11th ROW  -> Useful Pages-->
+    </a>
+
+
+    <!-- ROW-12 PAGES-ITEMS -->
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center" style="background-color:rgb(241,241,249);">
+
+        <!-- ROW 12 First line -->
+
+        <!-- COL-1 Knowledge Base-->
+        <div class="col p-5">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Knowledge Base</span>
+            <!-- Knowledge Base -->
+            <img src="Materio-Images/knowldge.jpg" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+
+        </div>
+
+        <!-- COl-2 Pricing -->
+        <div class="col p-4">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Pricing</span>
+            <!-- Image Bordered Layout -->
+            <img src="Materio-Images/pricing-ab.jpg" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+        <!-- COL-3 FAQ-->
+        <div class="col p-4">
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">FAQ</span>
+            <!-- FAQ -->
+            <img src="Materio-Images/FAQ.png" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+
+        <!-- ROW-12 2ND LINE PAGES-ITEMS  -->
+
+        <!-- COL-1 Login-->
+        <div class="col p-4 animation-effect">
+            <!-- Heading -->
+            <span style="font-size:20px;font-weight: bold;">Login</span>
+            <!-- Login -->
+            <img src="Materio-Images/login-purple-ab.png" class="img-fluid  rounded" style="cursor:pointer;">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded mb-5 text-center"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+        <!-- COL-2 Not Authorized -->
+        <div class="col p-4 ">
+
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Not Authorized</span>
+            <!-- Not Authorized -->
+            <img src="Materio-Images/Not auto.jpg" class="img-fluid mt-4 mb-1 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+
+        <!-- COl-3 Account Settings -->
+        <div class="col p-4 animation-effect">
+
+            <!-- Heading -->
+            <span style="font-size: 20px;font-weight: bold;">Account Settings</span>
+            <!-- Account Settings -->
+            <img src="Materio-Images/3-Account-Setting.jpg" class="img-fluid mt-4 rounded"
+                style="cursor:pointer;box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.5)">
+            <!-- Button -> Live Preview -->
+            <a href="Materio-Files/404-Error.html" class="btn rounded text-center mt-3"
+                id="Live-Preview-unique-Layouts">Live Preview</a>
+        </div>
+
+    </div>
+
+
+    <!-- END ROW 12 -->
+
+
+
+
+
+
+
+
+    <!-- ROW-13TH -->
+
+    <!-- Row for Github -->
+
+    <div class="row text-center pt-md-4 pt-2"
+        style="height:500px;background-image:linear-gradient(to right,rgb(97,34,213) ,purple);">
+        <!-- All content centered -->
+        <div class="col-12 align-self-center">
+            <!-- Icon Github -->
+            <i class="bi bi-github" style="color:white;font-size:90px"></i>
+            <!-- Heading Github -->
+            <h3 class="mt-lg-1 mt-0 mb-4" style="color:white;font-weight: bold;font-size: 35px">Github</h3>
+            <!-- Para Content  -->
+            <p style="width:45%;margin:auto;"><span class="text-center mt-md-5 mt-0 mb-md-0 md-2"
+                    style="color:white;font-size: 18px;">You can join Materio Admin Github repository to access the
+                    latest changes,
+                    bug fixes for a new release.
+                </span>
+            </p>
+
+            <!-- Button For Joining -->
+
+
+            <a href="Materio-Files/404-Error.html" class="btn rounded mt-md-4 mt-0" id="Demo-Buy-Now">Join Us</a>
+
+        </div>
+        <!-- End col For Github -->
+    </div>
+
+    <!-- End Row for Github  -->
+
+    <!--end  ROW-13TH -->
+
+
+
+
+    <!-- ROW-14 COMPONENTS -->
+
+
+    <!-- COMPONENTS Pages  Heading-->
+
+    <a name="Components" style="text-decoration:none;">
+
+
+        <div class="row text-center " style="background-color:rgb(241,241,249);box-shadow:
+             3px 4px 8px 2px rgba(0, 0, 0,0.5);box-shadow: 2px 0px rgba(0, 0, 0,0.5);">
+
+            <!-- Col for Content -->
+            <div class="col-12">
+
+                <!-- Heading -->
+
+                <h3 style="color:rgb(145,85,253);margin-top:12%; font-weight: bolder; font-size:40px;">Components</h3>
+
+                <!-- Paragraph Content -->
+                <p class="mt-2 ps-sm-5 ps-lg-0 pb-5 m-auto " style="color:rgba(0,0,0,0.9);font-size: 18px;width:50%;">
+                    Materio We have used most popular Vuetify components and combined them with useful components.Themed
+                    them with same UI of Materio principles and created a perfect design harmony.
+                </p>
+            </div>
+            <!-- End of Col for Content -->
+        </div>
+        <!-- End of 14th ROW  ->Components-->
+    </a>
+
+
+    <!-- ROW 15 -> Componets Pages Items -->
+
+
+    <div class="row text-center row-cols-3 row-cols-md-5 row-cols-sm-4  row-cols-lg-6 pt-5 mb-5"
+        style="background-color:transparent">
+
+        <div class="col pt-5">
+            <i class="bi bi-exclamation-triangle-fill Icons-components-hover  Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Alert</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-person Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Avatar</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-sd-card-fill Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Chips</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-lightning Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Icon</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-sliders  Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Slider</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-type-strikethrough Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Typos</p>
+        </div>
+
+
+        <!-- 2ND LINE ROW 15 -->
+
+        <div class="col pt-5">
+            <i class="bi bi-menu-button-wide Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Buttons</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-arrows-expand Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Expansion Panel</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-check2-circle Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Select</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-hash Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Dialog</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-tablet-fill  Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Tabs</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-person-badge Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Badge</p>
+        </div>
+
+
+        <!-- 3RD LINE of ROW-14-->
+
+
+        <div class="col pt-5">
+            <i class="bi bi-patch-check-fill Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Validations</p>
+        </div>
+        <div class="col  pt-5">
+            <i class="bi bi-table Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Tables</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-list-check Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">List</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-calendar-heart Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Date Picker</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-menu-up Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Menu</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-bar-chart-fill Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Charts</p>
+        </div>
+
+
+        <!--    4th line of ROW-14 -->
+
+        <div class="col pt-5">
+            <i class="bi bi-segmented-nav Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Pagination</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-stack Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Snackbar</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-calendar2-range Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">Timeline</p>
+        </div>
+        <div class="col pt-5">
+            <i class="bi bi-three-dots  Icons-components-hover Icons-components-not-hover"></i>
+            <p class="Icon-components-content">More</p>
+        </div>
+
+    </div>
+
+
+    <!-- Row 15 END Componets Pages Items -->
+
+
+
+    <!--    ROW-16 -->
+
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+
+
+    <div class="row text-center" style="background-color:rgb(234,234,240)">
+        <!-- Col for -> Questions Heading -->
+        <div class="col">
+            <!-- Heading -->
+            <h3 class="" style="color:rgb(145,85,253);margin-top:10%; font-weight: bolder; font-size:40px;">Frequently
+                Asked Questions</h3>
+            <!-- Para Content -->
+            <p class="mt-4" style="color:rgba(0,0,0,0.7);font-size: 16px;">Got a question? We've got answers. If you
+                have some other questions, see our <span style="font-size: 17px;font-weight: bold;"><a href="#"
+                        style="text-decoration:none;color:rgb(145,85,253)">Support center</a></span></p>
+
+            <!-- Questions Container -->
+
+
+            <!-- ACCORDION -->
+
+
+            <!-- .accordion  -> receive basic styling through bootstrap
+                     .accodion-flush -> On click blue hightlight,remove bg,some border,rounded-corners -->
+
+            <div class="accordion m-auto mt-5 mb-5 rounded"
+                style="background-color:white;width:75%;box-shadow: 3px 3px 7px 3px rgb(0,0,0,0.5);border-radius: 8px;border:1px solid white;"
+                id="accordionExample">
+
+
+                <!-- .accordion-item -> section for FAQ -->
+
+                <!-- ONE -->
+
+
+                <div class="accordion-item bg-transparent">
+
+                    <!-- Heading/Question 01  -->
+                    <h2 class="accordion-header pe-4  ps-4 pt-3" id="headingOne">
+
+                        <!-- For Click on Question -->
+                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a href="#" style="color:rgb(97,34,213)">Future Updates are Free?</a>
+                        </button>
+                    </h2>
+
+
+
+                    <!-- End Question 01 Heading -->
+
+                    <!--      accordion-collapse/collapse -> hide content -->
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+
+                        <!-- Question's -> Answers Section In accordion body -->
+                        <div class="accordion-body" style="color:rgba(0,0,0,0.7)">
+                            <p>You will get 12 months of free updates with the purchase. Please renew your license to
+                                get updates after that.</p>
+                        </div>
+                        <!-- End Accordion Body -->
+                    </div>
+                    <!-- End Collpase container -->
+                </div>
+                <!-- End Accordion Item ONE -->
+
+
+                <!-- TWO-->
+
+                <div class="accordion-item bg-transparent border-0">
+
+                    <!-- Heading/Question 02  -->
+                    <h2 class="accordion-header pe-4 ps-4 pt-3" id="headingTwo">
+
+                        <!-- For Click on Question -->
+                        <button class="accordion-button collapsed bg-transparent" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <a href="#" style="color:rgb(97,34,213)">Do i need to renew the liscense to use the
+                                temaplate?</a>
+                        </button>
+                    </h2>
+                    <!-- End Question 02 Heading -->
+
+
+                    <!--      accordion-collapse/collapse -> hide content -->
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+
+                        <!-- Question's -> Answers Section In accordion body -->
+                        <div class="accordion-body" style="color:rgba(0,0,0,0.7)">
+                            <p style="width:70%" class=" m-auto">No, In order to use the template you just need to have
+                                a valid license. You should renew the license to get future updates after 12 months of
+                                purchase.</p>
+                        </div>
+                        <!-- End Accordion Body -->
+                    </div>
+                    <!-- End Collpase container -->
+                </div>
+                <!-- End Accordion Item TWO -->
+
+
+                <!-- THREE-->
+
+                <div class="accordion-item bg-transparent border-0">
+
+                    <!-- Heading/Question 03  -->
+                    <h2 class="accordion-header pe-4 ps-4 pt-3 " id="headingThree">
+
+                        <!-- For Click on Question -->
+                        <button class="accordion-button collapsed bg-transparent" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            <a href="#" style="color:rgb(97,34,213)">How should I select Proper License?</a>
+                        </button>
+                    </h2>
+                    <!-- End Question 03 Heading -->
+
+
+                    <!--      accordion-collapse/collapse -> hide content -->
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+
+                        <!-- Question's -> Answers Section In accordion body -->
+                        <div class="accordion-body" style="color:rgba(0,0,0,0.7)">
+                            <p style="width:70%" class="m-auto">Use of any product you buy from ThemeSelection is bound
+                                by the license you purchase. Please refer to our license page for more details.</p>
+                        </div>
+                        <!-- End Accordion Body -->
+                    </div>
+                    <!-- End Collpase container -->
+                </div>
+                <!-- End Accordion Item THREE -->
+
+                <!-- Four-->
+
+                <div class="accordion-item bg-transparent border-0">
+
+                    <!-- Heading/Question 04  -->
+                    <h2 class="accordion-header  pe-4 ps-4 pt-3" id="headingFour">
+
+                        <!-- For Click on Question -->
+                        <button class="accordion-button collapsed bg-transparent" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            <a href="#" style="color:rgb(97,34,213)">Which license is applicable for SASS
+                                application?</a>
+                        </button>
+                    </h2>
+                    <!-- End Question 04 Heading -->
+
+
+                    <!--      accordion-collapse/collapse -> hide content -->
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+
+                        <!-- Question's -> Answers Section In accordion body -->
+                        <div class="accordion-body" style="color:rgba(0,0,0,0.7)">
+                            <p style="width:90%" class=" m-auto">If you are charging your customer for using your SASS
+                                based application you must buy an Extended License for each end product. If you aren't
+                                charging your customer then purchase Regular / Multiple Use License according to your
+                                requirement.</p>
+                        </div>
+                        <!-- End Accordion Body -->
+                    </div>
+                    <!-- End Collpase container -->
+                </div>
+                <!-- End Accordion Item Four -->
+
+
+            </div>
+
+            <!-- End Main-Accordion Conatiner -->
+
+
+        </div>
+        <!-- END col -->
+    </div>
+
+    <!-- END Row QUESTIONS-->
+
+    <!-- ROW 16 END -->
+
+
+
+
+
+    <!-- ROW-17 -->
+
+    <!-- ROW FOR PRICING CARDS -->
+
+    <div class="row row-cols-lg-3 row-cols-1" style="background-color:rgb(241,241,249);padding-top: 10%;">
+
+        <!-- COL-1 CARD-1 -->
+        <div class="col pb-lg-0 pb-5">
+            <!-- CARD-1 -->
+            <div class="card  rounded" style="background-color:rgb(97,34,213)">
+                <!-- CARD-BODY -->
+                <div class="card-body">
+                    <!-- Heading  -->
+                    <h5 class="card-title text-center pt-3" style="color:white;font-size:30px;font-weight:bold;">Single
+                        Use
+                        <hr style="color:rgb(97,34,213)">
+
+                    </h5>
+
+                    <!-- Para Content -->
+                    <p class="card-text" style="color:white;">Used by you or your <Strong>one client in a single end
+                            product which end users are not charged for.</Strong>
+                        <!-- List items -->
+                    <ul style="list-style-type: style type none;color:rgba(255,255,255,0.7)">
+                        <li>6 Months Premium Support</li>
+                        <li>12 Months Free Updates</li>
+                        <li>Instant Download</li>
+                        <li>Pricing includes all the taxes</li>
+                    </ul>
+                    <!-- Price -->
+                    <span style="color:White;font-weight:bold;font-size:30px">Only $69</span>
+                    </p>
+                    <!-- End Para content -->
+                    <!-- Button Purchase -->
+                    <a href="Materio-Files/404-Error.html" class="btn "
+                        style="color:White;background-color:rgb(255,76,81);box-shadow:3px 3px 7px 2px rgb(0,0,0,0.4)">purchase
+                        Now</a>
+
+                </div>
+                <!-- End Card body -->
+            </div>
+            <!-- End Card-1 -->
+
+        </div>
+        <!-- END Col-1 for CARD-1 -->
+
+        <!-- COL-2 CARD-2 -->
+        <div class="col pb-lg-0 pb-5">
+            <!-- CARD-2 -->
+            <div class="card  rounded" style="background-color:rgb(97,34,213)">
+                <!-- CARD-BODY -->
+                <div class="card-body">
+                    <!-- Heading  -->
+                    <h5 class="card-title text-center pt-3" style="color:white;font-size:30px;font-weight:bold;">
+                        Multiple Use
+                        <hr style="color:rgb(97,34,213);height:2px;">
+                    </h5>
+                    <!-- Para Content -->
+                    <p class="card-text" style="color:white;">Used by you or your <Strong>one client in a single end
+                            product which end users are not charged for.</Strong>
+                        <!-- List items -->
+                    <ul style="list-style-type: style type none;color:rgba(255,255,255,0.7)">
+                        <li>6 Months Premium Support</li>
+                        <li>12 Months Free Updates</li>
+                        <li>Instant Download</li>
+                        <li>Pricing includes all the taxes</li>
+                    </ul>
+                    <!-- Price -->
+                    <span style="color:White;font-weight:bold;font-size:30px">Only $149</span>
+                    </p>
+                    <!-- End Para content -->
+                    <!-- Button Purchase -->
+                    <a href="Materio-Files/404-Error.html" class="btn "
+                        style="color:White;background-color:rgb(255,76,81);box-shadow:3px 3px 7px 2px rgb(0,0,0,0.4)">purchase
+                        Now</a>
+                </div>
+                <!-- End Card Body -->
+            </div>
+            <!-- End Card-2 -->
+        </div>
+        <!-- END Col-2 for CARD-2 -->
+
+        <!-- COL-3 CARD-3 -->
+        <div class="col pb-lg-0 pb-5">
+            <!-- CARD-3 -->
+            <div class="card  rounded" style="background-color:rgb(97,34,213)">
+                <!-- CARD-BODY -->
+                <div class="card-body">
+                    <!-- Heading  -->
+                    <h5 class="card-title text-center pt-3" style="color:white;font-size:30px;font-weight:bold;">
+                        Extended Use
+                        <hr style="color:rgb(97,34,213);height:2px;">
+                    </h5>
+                    <!-- Para Content -->
+                    <p class="card-text" style="color:white;">Used by you or your <Strong>one client in a single end
+                            product which end users are not charged for.</Strong>
+                        <!-- List items -->
+                    <ul style="list-style-type: style type none;color:rgba(255,255,255,0.7)">
+                        <li>6 Months Premium Support</li>
+                        <li>12 Months Free Updates</li>
+                        <li>Instant Download</li>
+                        <li>Pricing includes all the taxes</li>
+                    </ul>
+                    <!-- Price -->
+                    <span style="color:White;font-weight:bold;font-size:30px">Only $170</span>
+                    </p>
+                    <!-- End Para content -->
+                    <!-- Button Purchase -->
+                    <a href="Materio-Files/404-Error.html" class="btn "
+                        style="color:White;background-color:rgb(255,76,81);box-shadow:3px 3px 7px 2px rgb(0,0,0,0.4)">purchase
+                        Now</a>
+                </div>
+                <!-- End Card body-->
+            </div>
+            <!-- END Card  -->
+        </div>
+        <!-- End Col-3 for CARD-3 -->
+    </div>
+
+    <!-- End Row for Cards -->
+
+    <!-- END ROW 17 -> PRICING CARDS -->
+
+
+
+
+
+
+
+
+
+    <!-- ROW-18 -->
+
+    <!-- COPY RIGHT -->
+
+    <div class="row text-center p-2" style="background-color:rgb(241,241,249);margin-top: 5%;">
+        <!-- COPYRIGHT -->
+        <div class="col">
+            <p style="font-size:17px;color:black">CopyRight 2022 Designed by
+                <span><a href="Materio-Files/404-Error.html" id="BTS-Copyright">@BTS</span>
+
+            </p>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- END ROW-18 -->
+
+    </div>
+
+    <!-- End of Conatiner-Fluid -->
+
+
+
+
+
+</body>
+
+</html>
